@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class MyServer {
     public static  void  main(String []args) throws Exception{
-        ServerSocket serverSocket = new ServerSocket(10001);
+        ServerSocket serverSocket = new ServerSocket(10000);
         Socket  socket  = serverSocket.accept();
         DataInputStream dis =  new DataInputStream(socket.getInputStream());
         DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
